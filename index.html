@@ -123,7 +123,7 @@ section{padding:96px 0}
 
 /* fotos y videos de cada inmueble */
 .pic .media{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;background:#000}
-.pic video.media{object-fit:contain}
+.pic video.media,.pic img.media{object-fit:contain}
 .pic .nav-m{position:absolute;top:50%;transform:translateY(-50%);z-index:2;width:38px;height:38px;border-radius:50%;border:0;background:rgba(12,12,14,.6);color:#fff;font-size:20px;line-height:1;cursor:pointer;display:grid;place-items:center}
 .pic .nav-m:hover{background:rgba(12,12,14,.85)}
 .pic .prev{left:10px}.pic .next{right:10px}
@@ -297,39 +297,40 @@ footer .legal-line{padding-top:22px;display:flex;justify-content:space-between;g
     </div>
     <div class="grid" id="grid" aria-live="polite">
       <article class="prop" data-t="venta" data-k="casa">
-        <div class="pic"><span class="badge">Venta</span><video class="media" controls playsinline preload="metadata" src="propiedad%201.mp4" aria-label="Video de Propiedad 1"></video></div>
+        <div class="pic"><span class="badge">Venta</span><video class="media" controls playsinline preload="metadata" src="video/propiedad%201.mp4" aria-label="Video: Casa en venta en Catambuco"></video></div>
         <div class="body">
           <div class="price">Consultar precio</div>
-          <h3>Propiedad 1</h3>
+          <h3>Casa en venta en Catambuco</h3>
+          <div class="loc"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0114 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Catambuco, Pasto</div>
+          <div class="verified"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12l4 4 10-10"/></svg>Títulos verificados</div>
+        </div>
+      </article>
+      <article class="prop" data-t="venta" data-k="lote">
+        <div class="pic"><span class="badge">Venta</span><video class="media" controls playsinline preload="metadata" src="video/propiedad%202.mp4" aria-label="Video: Oportunidad de inversión en El Encano"></video></div>
+        <div class="body">
+          <div class="price">Consultar precio</div>
+          <h3>Oportunidad de inversión en El Encano</h3>
+          <div class="loc"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0114 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>El Encano, Nariño</div>
+          <div class="verified"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12l4 4 10-10"/></svg>Títulos verificados</div>
+        </div>
+      </article>
+      <article class="prop" data-t="venta" data-k="apto">
+        <div class="pic"><span class="badge">Venta</span><img class="media" src="video/propiedad%203.png" alt="Torres Manhattan, apartamentos de 90 m²" loading="lazy" decoding="async"></div>
+        <div class="body">
+          <div class="price">Consultar precio</div>
+          <h3>Torres Manhattan · Apartamentos de 90 m²</h3>
           <div class="loc"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0114 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Pasto</div>
           <div class="verified"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12l4 4 10-10"/></svg>Títulos verificados</div>
         </div>
       </article>
-      <article class="prop" data-t="venta" data-k="casa">
-        <div class="pic"><span class="badge">Venta</span><video class="media" controls playsinline preload="metadata" src="propiedad%202.mp4" aria-label="Video de Propiedad 2"></video></div>
+      <article class="prop" data-t="venta" data-k="lote">
+        <div class="pic"><span class="badge">Venta</span><img class="media" src="video/propiedad%204.png" alt="Villa Encanto, lotes campestres en Cajucal" loading="lazy" decoding="async"></div>
         <div class="body">
-          <div class="price">Consultar precio</div>
-          <h3>Propiedad 2</h3>
-          <div class="loc"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0114 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Pasto</div>
+          <div class="price"><small>Desde</small> $ 100.000.000</div>
+          <h3>Villa Encanto · Lotes campestres en Cajucal</h3>
+          <div class="loc"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0114 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Cajucal, a minutos de Pasto</div>
           <div class="verified"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12l4 4 10-10"/></svg>Títulos verificados</div>
-        </div>
-      </article>
-      <article class="prop" data-t="venta" data-k="casa">
-        <div class="pic"><span class="badge">Venta</span><img class="media" src="propiedad%203.png" alt="Propiedad 3" loading="lazy" decoding="async"></div>
-        <div class="body">
-          <div class="price">Consultar precio</div>
-          <h3>Propiedad 3</h3>
-          <div class="loc"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0114 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Pasto</div>
-          <div class="verified"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12l4 4 10-10"/></svg>Títulos verificados</div>
-        </div>
-      </article>
-      <article class="prop" data-t="venta" data-k="casa">
-        <div class="pic"><span class="badge">Venta</span><img class="media" src="propiedad%204.png" alt="Propiedad 4" loading="lazy" decoding="async"></div>
-        <div class="body">
-          <div class="price">Consultar precio</div>
-          <h3>Propiedad 4</h3>
-          <div class="loc"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0114 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Pasto</div>
-          <div class="verified"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12l4 4 10-10"/></svg>Títulos verificados</div>
+          <div class="specs"><span>Lotes de 500 m²</span></div>
         </div>
       </article>
     </div>
